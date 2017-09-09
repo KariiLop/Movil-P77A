@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.kariis.aplicacioncontactos.Actividad2">
+
+    <EditText
+        android:id="@+id/txtUsuario"
+        android:layout_width="355dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Usuario"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:text="Correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUsuario"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_alignEnd="@+id/txtUsuario"
+        android:layout_alignStart="@+id/txtUsuario" />
+
+    <EditText
+        android:id="@+id/txtTwitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtUsuario"
+        android:layout_below="@+id/txtEmail"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Twitter"
+        android:layout_alignEnd="@+id/txtEmail" />
+
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:text="Telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtTwitter"
+        android:layout_below="@+id/txtTwitter"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_alignEnd="@+id/txtTwitter" />
+
+    <EditText
+        android:id="@+id/txtFechaNacimiento"
+        android:text="Fecha de Nacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtTelefono"
+        android:layout_below="@+id/txtTelefono"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_alignEnd="@+id/txtTelefono" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:layout_marginBottom="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/txtFechaNacimiento"
+        android:layout_marginEnd="22dp" />
+</RelativeLayout>
